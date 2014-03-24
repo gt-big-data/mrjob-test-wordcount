@@ -39,3 +39,4 @@ Things you need to do:
 python word_count.py -r emr s3://gt-big-data-club/mrjob-test-wordcount/sherlock-holmes.txt --output-dir=s3://gt-big-data-club/mrjob-test-wordcount/out --no-output
 ```
 This will spin up an instance to run your job, and word count a copy of sherlock holmes we uploaded to s3 previously.
+It takes about 90 seconds to spin up the instances, and then another minute or something to run the job. You can always look at the job running from the "elastic map reduce" part of your aws console after logging in.
