@@ -1,5 +1,5 @@
 This is for users to test their EMR credentials and get started with MRJob, EMR, and S3.
-This is code from [the wiki](https://github.com/gt-big-data/wiki/wiki/AWS-Info#using-emr-with-mrjob) :)
+This is code from [the wiki](https://github.com/gt-big-data/wiki/wiki/AWS-Info#using-emr-with-mrjob)
 
 ## Starting
 install mrjob with `pip install mrjob`
@@ -21,7 +21,7 @@ Things you need from us
 
 Things you need to do:
   1. [Create an EC2 key pair](http://docs.aws.amazon.com/gettingstarted/latest/wah/getting-started-create-key-pair.html), and download it to your machine. Make sure to run `chmod 400 *myKeyPair.pem*`
-    1. NOTE that you should see pdv.pem in this folder when creating your key pair. If you don't then this is not guaranteed to work.
+    1. [Make sure your URL Has ?region=us-east-1](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#KeyPairs) or everything will be messed up! The `.mrjob.conf` file assumes you are using a us-east-1 key pair! :)
   2. Fill in the `.mrjob.conf` file with your access key, secret access token, key pair name, and key pair path.
 
   A fake example of what this might look like in your `.mrjob.conf` with user bob who created the key-pair bob.pem and stored it in his configs folder
